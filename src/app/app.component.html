@@ -27,3 +27,9 @@
 <button (click)="Addition()" style="width: 120px;height: 25px;">+</button>
 <button (click)="Substraction()" style="width: 120px; height: 25px;">-</button>
 
+<!---two ways data binding-->
+<h2 style="text-align: center;">data binding</h2>
+<div style="text-align: center;">
+  <input type="number" [(ngModel)]="count1" >
+  {{count1}}
+</div>

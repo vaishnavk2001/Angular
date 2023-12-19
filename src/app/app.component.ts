@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   public nw_name = 'IT MASTER';
   public str = ''
+  public count1 = 0
   title = 'new_project';
   obj = {
     title1 : 'angular',
