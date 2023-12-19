@@ -66,5 +66,13 @@ export class AppComponent {
       this.Evenodd = 'odd'
     }
   }
+  // for if
+  public fruit = [
+    {'name':"orange","price":100},
+    {'name':"mango","price":200},
+    {'name':"pinapple","price":150},
+    {'name':"watermelon","price":400},
+    {'name':"lemon","price":130}
+  ]
 
 }

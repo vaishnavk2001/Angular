@@ -35,4 +35,20 @@
 <div style="text-align: center;">
   <h2 [hidden] = 'is_hidden' >{{count1}} --- {{nw_str}}</h2>
 </div>
- 
+
+<!--for if -->
+<h2 style="text-align: center;">Item</h2>
+<hr/>
+<table style="text-align: center;">
+  <thead>
+    <th>Name</th>
+    <th>Price</th>
+  </thead>
+  <tbody *ngFor = "let item of fruit" >
+    <tr *ngIf="item.price<400">
+      <td>{{item.name}}</td>
+      <td>{{item.price}}</td>
+    </tr>  
+  </tbody>
+</table> 
+<!-- commands used for comparision >,<,>=,<=,==,!= -->
