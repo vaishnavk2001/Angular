@@ -30,6 +30,9 @@
 <!---two ways data binding-->
 <h2 style="text-align: center;">data binding</h2>
 <div style="text-align: center;">
-  <input type="number" [(ngModel)]="count1" >
-  {{count1}}
+  <input type="number" [(ngModel)]="count1" ><button (click)="check()">check</button>
 </div>
+<div style="text-align: center;">
+  {{count1}} --- {{nw_str}}
+</div>
+ 

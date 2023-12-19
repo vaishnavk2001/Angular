@@ -9,6 +9,15 @@ export class AppComponent {
   public nw_name = 'IT MASTER';
   public str = ''
   public count1 = 0
+  public nw_str = ''
+  check(){
+    console.log('button clicked...!')
+    if(this.count1 % 2 == 0){
+      this.nw_str = 'even';
+    }else{
+      this.nw_str = 'odd';
+    }
+  }
   title = 'new_project';
   obj = {
     title1 : 'angular',
@@ -52,4 +61,5 @@ export class AppComponent {
       this.Evenodd = 'odd'
     }
   }
+
 }
