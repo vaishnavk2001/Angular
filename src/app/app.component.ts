@@ -14,6 +14,7 @@ export class AppComponent {
     title2 : 'node',
     title3 : 'frontend framework'
   }
+  public Evenodd = 'even'
   ngOnInit=()=>{
     console.log(this.str)
   }
@@ -35,9 +36,19 @@ export class AppComponent {
   Addition=()=> {
     console.log('add button clicked')
     this.count = this.count + 1 
+    if(this.count % 2 == 0){
+      this.Evenodd = 'even'
+    }else{
+      this.Evenodd = 'odd'
+    }
   }
   Substraction = () =>{
     console.log('substraction button clicked ')
     this.count = this.count-1
+    if(this.count % 2 == 0){
+      this.Evenodd = 'even'
+    }else{
+      this.Evenodd = 'odd'
+    }
   }
 }
