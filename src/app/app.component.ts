@@ -31,4 +31,13 @@ export class AppComponent {
     console.log('second button clicked')
     this.str = 'Good AfterNoon'
   }
+  public count = 0
+  Addition=()=> {
+    console.log('add button clicked')
+    this.count = this.count + 1 
+  }
+  Substraction = () =>{
+    console.log('substraction button clicked ')
+    this.count = this.count-1
+  }
 }
