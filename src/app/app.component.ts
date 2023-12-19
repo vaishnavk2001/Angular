@@ -10,13 +10,18 @@ export class AppComponent {
   public str = ''
   public count1 = 0
   public nw_str = ''
+  public is_hidden = true
   check(){
+    this.is_hidden = false
     console.log('button clicked...!')
     if(this.count1 % 2 == 0){
       this.nw_str = 'even';
     }else{
       this.nw_str = 'odd';
     }
+  }
+  clear(){
+    this.is_hidden = true
   }
   title = 'new_project';
   obj = {
