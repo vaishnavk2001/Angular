@@ -1,0 +1,19 @@
+.navbar-dark{
+    background-color:#000000;
+    color: white;
+}
+.logo{
+    padding: 5px;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.optn-ul{
+    display: flex;
+    list-style: none;
+}
+.optn-ul>li{
+    padding: 5px;
+}

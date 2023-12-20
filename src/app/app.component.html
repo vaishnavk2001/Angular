@@ -1,43 +1,51 @@
-<h1 style="text-align: center;">Content {{nw_name}}</h1>
+<!-- <h1 style="text-align: center;">Content {{nw_name}}</h1>
 <h1 style="text-align: center;">javascript most popular framework is {{obj.title1}}</h1>
 <h1 style="text-align: center;">{{obj.title2}} is a backend PL</h1>
 <h1 style="text-align: center;">anular is a {{obj.title3}}</h1>
 <div style="text-align: center;background-color: blue;">
   <input type="text" placeholder="{{nw_name}}" />
-</div>
-<!--style binding-->
+</div> -->
+
+<!-- style binding -->
+
 <!--background coloring-->
-<div [style.background-color] = "colorFunction()" style="text-align: center;">
+<!-- <div [style.background-color] = "colorFunction()" style="text-align: center;">
   <input type="text" style="text-align: center;" placeholder="{{nw_name}}" />
-</div>
+</div> -->
+
 <!--height-->
-<div style="text-align: center;">
+
+<!-- <div style="text-align: center;">
     <input type="text" [style.height] = "heightFunction()" placeholder="height" />
-</div>
+</div> -->
+
 <!---event handling-->
-<h1 style="text-align: center;">Event Handling</h1>
+
+<!-- <h1 style="text-align: center;">Event Handling</h1>
 <h1 style="text-align: center;">Hey friends {{str}}</h1>
 <button (click)="functionCalling()">Good Morning</button>
-<button (click)="functionCalling2()">Good Afternoon</button>
+<button (click)="functionCalling2()">Good Afternoon</button> -->
 
 <!--counter application in event handling-->
-<h1 style="text-align: center;">Counter Application</h1>
+
+
+<!-- <h1 style="text-align: center;">Counter Application</h1>
 <h2 style="text-align: center ;">count -- {{count}}</h2>
 <h2 style="text-align: center;">count number is {{Evenodd}}</h2>
 <button (click)="Addition()" style="width: 120px;height: 25px;">+</button>
-<button (click)="Substraction()" style="width: 120px; height: 25px;">-</button>
+<button (click)="Substraction()" style="width: 120px; height: 25px;">-</button> -->
 
 <!---two ways data binding-->
-<h2 style="text-align: center;">data binding</h2>
+<!-- <h2 style="text-align: center;">data binding</h2>
 <div style="text-align: center;">
   <input type="number" [(ngModel)]="count1" ><button (click)="check()">check</button><button (click)="clear()">Clear</button>
 </div>
 <div style="text-align: center;">
   <h2 [hidden] = 'is_hidden' >{{count1}} --- {{nw_str}}</h2>
-</div>
+</div> -->
 
 <!--for if -->
-<h2 style="text-align: center;">Item</h2>
+<!-- <h2 style="text-align: center;">Item</h2>
 <hr/>
 <table style="text-align: center;">
   <thead>
@@ -50,5 +58,21 @@
       <td>{{item.price}}</td>
     </tr>  
   </tbody>
-</table> 
-<!-- commands used for comparision >,<,>=,<=,==,!= -->
+</table>  -->
+<!-- commands used for comparision >,<,>=,<=,==,!= --> 
+
+<nav class="navbar navbar-dark bg-dark container">
+  <div class="main ">
+    <div class="logo">
+        <h1>ROUTING</h1>
+    </div>
+    <div class="optn">
+        <ul class="optn-ul">
+          <li [routerLink] = "['/home']">Home</li>
+          <li [routerLink] = "['/contact_us']">Contact Us</li>
+          <li>About Us</li>
+        </ul>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
